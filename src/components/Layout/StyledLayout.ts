@@ -16,7 +16,7 @@ export const StyledLayout = styled.div`
 `
 export const StyledHeader = styled.header`
   height: 7vh;
-  border-bottom: solid 2px ${({ theme }) => theme.color.black};
+  border-bottom: solid 1px ${({ theme }) => theme.color.black};
 
   div {
     width: 80%;

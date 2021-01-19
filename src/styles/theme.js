@@ -16,7 +16,6 @@ export const theme = {
     },
   },
   border: {
-    color: "#e3e3e3",
     radius: {
       large: "20px",
       small: "5px",

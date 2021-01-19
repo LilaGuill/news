@@ -68,7 +68,6 @@ h1{
 }
 h2{
   font-size:22px;
-	font-weight:bold;
 }
 h3{
   font-size:20px;
