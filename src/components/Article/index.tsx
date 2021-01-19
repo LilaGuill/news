@@ -1,22 +1,25 @@
+import { useHistory } from "react-router-dom"
 import { StyledArticle } from "./StyledArticle"
-import dayjs from "dayjs"
 import { ArticleType } from "../../types/articles"
+import Title from "../Title"
+import PublicationDate from "../PublicationDate"
 
-const Article = ({
-  index,
-  title,
-  description,
-  urlToImage,
-  publishedAt,
-}: ArticleType) => {
+const Article = (props: ArticleType) => {
+  const history = useHistory()
+
   return (
-    <StyledArticle key={index}>
-      {urlToImage && <img src={urlToImage} className="image" alt="img" />}
-      <div className="title">{title}</div>
+    <StyledArticle
+      onClick={() => {
+        history.push("/article", props)
+      }}
+    >
+      {props.urlToImage && (
+        <img src={props.urlToImage} className="image" alt="img" />
+      )}
+      <Title title={props.title} size={"small"} hasHover={true} />
       <div className="date">
-        Le {dayjs(publishedAt).format("DD/MM/YYYY à HH:mm")}
+        <PublicationDate publishedAt={props.publishedAt} />
       </div>
-      <div className="description">{description}</div>
     </StyledArticle>
   )
 }

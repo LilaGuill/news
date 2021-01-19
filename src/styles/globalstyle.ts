@@ -38,8 +38,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-  font-family: 'Karla';
-	background-color:#FCFCFC;
+  font-family: helvetica;
+	background-color:#E2E5EB;
 	color:#1E1E1E;
   
 }

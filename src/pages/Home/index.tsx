@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
 import Loader from "react-loader-spinner"
-import Articles from "../components/Articles"
+import Articles from "../../components/Articles"
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true)
@@ -9,9 +9,11 @@ const Home = () => {
 
   const getNews = async () => {
     const res = await axios.get("/.netlify/functions/getNews")
+    console.log(res.data.response)
     setArticles(res.data.response)
     setIsLoading(false)
   }
+
   useEffect(() => {
     getNews()
   }, [])

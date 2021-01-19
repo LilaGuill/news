@@ -7,7 +7,7 @@ const Articles = ({ articles }: ArticlesType) => {
     <StyledArticles>
       {articles &&
         articles.map((article, index) => {
-          return <Article index={index} {...article} />
+          return <Article key={index} {...article} />
         })}
     </StyledArticles>
   )

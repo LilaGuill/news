@@ -3,7 +3,7 @@ export type ArticlesType = {
 }
 
 export type ArticleType = {
-  index?: number
+  index?: number | string
   author: string
   content: string
   description: string

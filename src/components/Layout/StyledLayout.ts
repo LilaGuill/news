@@ -12,19 +12,27 @@ export const StyledLayout = styled.div`
     margin: auto;
     display: grid;
     place-items: center;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 `
 export const StyledHeader = styled.header`
   height: 7vh;
-  border-bottom: solid 1px ${({ theme }) => theme.color.black};
+  border-bottom: solid 1px ${({ theme }) => theme.color.grey.darken};
 
-  div {
+  .wrapper {
     width: 80%;
     margin: auto;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 768px) {
+      width: 90%;
+    }
   }
 `
 export const StyledFooter = styled.footer`
@@ -33,4 +41,8 @@ export const StyledFooter = styled.footer`
   margin: auto;
   display: grid;
   place-items: center;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `

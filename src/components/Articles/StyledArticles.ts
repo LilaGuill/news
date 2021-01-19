@@ -6,4 +6,8 @@ export const StyledArticles = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 40px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `
