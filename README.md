@@ -8,9 +8,9 @@
 
 **Functionalities**
 
-- The page "Home" displays articles from News API https://newsapi.org/docs/endpoints/top-headlines.
-- In page Home a menu allows the user to search articles by categories.
-- In page Home a search bar allows the user to search articles containing specfics words
+- The page "Home" displays articles from News API : https://newsapi.org/docs/endpoints/top-headlines.
+- In Home page a menu allows the user to search articles by categories.
+- In Home page a search bar allows the user to search articles containing specfics words
 - The page "Article" displays the article selected by the user with more details.
 
 ## Running the project
@@ -37,7 +37,6 @@ npm install
 
 ```
 API_KEY="123454...."
-
 ```
 
 **Run the project**
@@ -56,8 +55,9 @@ These functions are stored in the functions file in the project.
 
 For more informations about the lamba functions : https://docs.netlify.com/functions/overview/
 
-In your front you just have to call your function :
+In your front you have to call your function like this:
 
 ```
 const res = await axios.get("/.netlify/functions/getNews")
+
 ```

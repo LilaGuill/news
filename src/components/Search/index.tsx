@@ -9,6 +9,7 @@ type SearchType = {
   setIsLoading: React.Dispatch<React.SetStateAction<boolean>>
   category: string
 }
+
 const Search = ({ setArticles, category, setIsLoading }: SearchType) => {
   const [search, setSearch] = useState("")
 
