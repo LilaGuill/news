@@ -14,9 +14,12 @@ const FullArticle = (article: ArticleType) => {
       <p>{article.description}</p>
       <img src={article.urlToImage} width={"100%"} alt="img" />
       <p>{article.content}</p>
-      <a href={article.url} target="_blanck">
-        Source : {article.source.name}
-      </a>
+      <div>Source : {article.source.name}</div>
+      <div className="link">
+        <a href={article.url} target="_blanck">
+          Lire l'article complet
+        </a>
+      </div>
     </StyledFullArticle>
   )
 }

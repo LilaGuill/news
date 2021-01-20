@@ -11,12 +11,10 @@ const Layout = ({ children }: LayoutType) => {
   return (
     <StyledLayout>
       <StyledHeader>
-        <div className="wrapper">
-          <h2>News today</h2>
-          <Link to="/">
-            <Home color="#1E1E1E" />
-          </Link>
-        </div>
+        <Link className="wrapper" to="/">
+          <h3>News today</h3>
+          <Home color="#1E1E1E" />
+        </Link>
       </StyledHeader>
 
       <main>{children}</main>

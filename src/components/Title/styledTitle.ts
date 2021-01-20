@@ -6,7 +6,7 @@ type SizeType = {
 }
 
 export const StyledTitle = styled.div`
-  font-size: ${({ size }: SizeType) => (size === "large" ? "24px" : "16px")};
+  font-size: ${({ size }: SizeType) => (size === "large" ? "24px" : "14px")};
   font-weight: bold;
   color: black;
   margin: 10px 0;

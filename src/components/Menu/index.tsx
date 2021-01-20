@@ -18,9 +18,12 @@ const Menu = ({
 }: MenuType) => {
   const handleClick = async (value: string) => {
     setIsLoading((prevState) => !prevState)
-    const res = await axios.get(
-      `/.netlify/functions/getNewsByCategory?category=${value}`
-    )
+
+    const url = value
+      ? `/.netlify/functions/getNewsByCategory?category=${value}`
+      : "/.netlify/functions/getNews"
+
+    const res = await axios.get(url)
     setArticles(res.data.response)
     setIsLoading((prevState) => !prevState)
   }

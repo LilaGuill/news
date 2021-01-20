@@ -41,6 +41,7 @@ body {
   font-family: helvetica;
 	background-color:#E2E5EB;
 	color:#1E1E1E;
+	letter-spacing:0.5px;
   
 }
 ol, ul {
@@ -67,7 +68,8 @@ h1{
 	font-weight:bold;
 }
 h2{
-  font-size:22px;
+	font-size:22px;
+	font-weight:bold;
 }
 h3{
   font-size:20px;

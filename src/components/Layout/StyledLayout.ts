@@ -29,10 +29,17 @@ export const StyledHeader = styled.header`
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
     @media (max-width: 768px) {
       width: 90%;
+    }
+    h3 {
+      margin-right: 10px;
+    }
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
     }
   }
 `

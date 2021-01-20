@@ -6,4 +6,5 @@ export const categories = [
   { value: "science", label: "Science" },
   { value: "sports", label: "Sports" },
   { value: "technology", label: "Technologie" },
+  { value: "", label: "tous" },
 ]
