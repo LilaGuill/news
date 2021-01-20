@@ -23,6 +23,9 @@ export const StyledHeader = styled.header`
   border-bottom: solid 1px ${({ theme }) => theme.color.grey.medium};
   background: white;
 
+  width: 100%;
+  z-index: 1;
+
   .wrapper {
     width: 80%;
     margin: auto;

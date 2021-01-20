@@ -36,7 +36,7 @@ const Search = ({ setArticles, category, setIsLoading }: SearchType) => {
     <StyledSearch>
       <form onSubmit={handleSubmit}>
         <input
-          placeholder="Votre recheche"
+          placeholder="Votre recherche"
           type="text"
           value={search}
           onChange={handleChange}

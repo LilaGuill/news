@@ -9,7 +9,7 @@ export const StyledMenu = styled.div`
   justify-content: space-between;
   width: 100%;
   margin: 10px 0;
-  padding: 10px 0;
+  padding: 20px 0;
   border-bottom: solid 1px ${({ theme }) => theme.color.grey.medium};
 
   @media (max-width: 768px) {

@@ -1,12 +1,17 @@
 import styled from "styled-components"
 
+type ArticleType = {
+  index?: number | string
+}
+
 export const StyledArticle = styled.div`
   position: relative;
-  width: 250px;
-  height: 300px;
+  width: ${({ index }: ArticleType) =>
+    index === 0 || index === 1 ? "46%" : "250px"};
+  height: ${({ index }: ArticleType) =>
+    index === 0 || index === 1 ? "400px" : "300px"};
   background: white;
   margin-bottom: 10px;
-  margin-left: 10px;
   border: solid 1px ${({ theme }) => theme.color.grey.light};
   border-radius: ${({ theme }) => theme.border.radius.small};
   padding: 10px;
@@ -21,8 +26,10 @@ export const StyledArticle = styled.div`
 
   .image {
     width: 100%;
-    height: 150px;
-    object-fit: fill;
+
+    height: ${({ index }: ArticleType) =>
+      index === 0 || index === 1 ? "250px" : "150px"};
+    object-fit: cover;
     @media (max-width: 768px) {
       height: 200px;
     }

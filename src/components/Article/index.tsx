@@ -6,9 +6,10 @@ import PublicationDate from "../PublicationDate"
 
 const Article = (props: ArticleType) => {
   const history = useHistory()
-
+  console.log(props.index)
   return (
     <StyledArticle
+      index={props.index}
       onClick={() => {
         history.push("/article", props)
       }}

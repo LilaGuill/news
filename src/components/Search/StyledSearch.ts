@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const StyledSearch = styled.div`
-  margin: 20px 0;
+  margin: 10px 0;
   background: white;
   width: 100%;
   height: 80px;
@@ -12,6 +12,9 @@ export const StyledSearch = styled.div`
     width: 50%;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 768px) {
+      width: 90%;
+    }
   }
 
   input {

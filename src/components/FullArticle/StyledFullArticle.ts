@@ -7,7 +7,7 @@ export const StyledFullArticle = styled.div`
   flex-direction: column;
   margin: 20px auto;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 20px 20px 10px 20px;
   @media (max-width: 768px) {
     width: 90%;
   }
