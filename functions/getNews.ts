@@ -1,9 +1,14 @@
 require("dotenv").config()
 import axios from "axios"
 
-export async function handler() {
+export async function handler(event) {
+  const search = event.queryStringParameters.search
+
   try {
-    const url = `http://newsapi.org/v2/top-headlines?country=fr&apiKey=${process.env.API_KEY}`
+    const url = `http://newsapi.org/v2/top-headlines?${
+      search && `q=${search}`
+    }&country=fr&apiKey=${process.env.API_KEY}&pageSize=100`
+
     const response = await axios.get(url)
     return {
       statusCode: 200,

@@ -3,9 +3,10 @@ import styled from "styled-components"
 export const StyledArticle = styled.div`
   position: relative;
   width: 250px;
-  min-height: 300px;
+  height: 300px;
   background: white;
   margin-bottom: 10px;
+  margin-left: 10px;
   border: solid 1px ${({ theme }) => theme.color.grey.light};
   border-radius: ${({ theme }) => theme.border.radius.small};
   padding: 10px;

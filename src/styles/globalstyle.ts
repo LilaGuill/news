@@ -29,7 +29,7 @@ button{
 	border:none;
 	padding: 10px 20px;
 	outline:none;
-	border-radius:5px;
+	border-radius:2px;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 

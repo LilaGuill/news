@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
-
 import Articles from "../../components/Articles"
 import Menu from "../../components/Menu"
+import Search from "../../components/Search"
 import Loading from "../../components/Loading"
 
 const Home = () => {
@@ -22,12 +22,19 @@ const Home = () => {
 
   return (
     <>
-      <Menu
-        setArticles={setArticles}
-        setIsLoading={setIsLoading}
-        category={category}
-        setCategory={setCategory}
-      />
+      <>
+        <Menu
+          setArticles={setArticles}
+          setIsLoading={setIsLoading}
+          category={category}
+          setCategory={setCategory}
+        />
+        <Search
+          category={category}
+          setArticles={setArticles}
+          setIsLoading={setIsLoading}
+        />
+      </>
       {!isLoading ? <Articles articles={articles} /> : <Loading />}
     </>
   )

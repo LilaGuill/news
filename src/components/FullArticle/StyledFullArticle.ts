@@ -11,6 +11,9 @@ export const StyledFullArticle = styled.div`
     width: 90%;
   }
 
+  img {
+    margin-bottom: 5px;
+  }
   p {
     margin: 20px 0;
     line-height: 22px;

@@ -3,10 +3,15 @@ import axios from "axios"
 
 export async function handler(event) {
   const category = event.queryStringParameters.category
-  try {
-    const url = `http://newsapi.org/v2/top-headlines?country=fr&category=${category}&apiKey=${process.env.API_KEY}`
+  const search = event.queryStringParameters.search
 
-    console.log(url)
+  try {
+    const url = `http://newsapi.org/v2/top-headlines?${
+      search && `q=${search}`
+    }&country=fr&${category && `category=${category}`}&apiKey=${
+      process.env.API_KEY
+    }&pageSize=100`
+
     const response = await axios.get(url)
 
     return {

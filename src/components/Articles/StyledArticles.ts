@@ -3,7 +3,8 @@ import styled from "styled-components"
 export const StyledArticles = styled.div`
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  min-height: 83vh;
+  justify-content: center;
   flex-wrap: wrap;
   margin-top: 10px;
 

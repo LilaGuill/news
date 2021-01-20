@@ -35,13 +35,13 @@ export const StyledCategory = styled.div`
   ${({ isActive }: CategoryType) =>
     isActive === true &&
     css`
-      background: ${({ theme }) => theme.color.blue};
+      background: ${({ theme }) => theme.color.grey.darken};
       color: white;
     `}
 
   &:hover {
     cursor: pointer;
-    color: ${({ theme, isActive }) => (isActive ? "white" : theme.color.blue)};
+    opacity: 0.7;
     text-decoration: underline;
   }
 
