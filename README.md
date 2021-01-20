@@ -8,41 +8,39 @@
 
 **Functionalities**
 
-- the page "Home" displays articles from News API https://newsapi.org/docs/endpoints/top-headlines.
-- a menu in page Home allows the user to search articles by categorie.
-- a search bar in page Home allows the user to search articles containing specfics words
-- the page "Article" displays the article selected by the user with more details.
+- The page "Home" displays articles from News API https://newsapi.org/docs/endpoints/top-headlines.
+- In page Home a menu allows the user to search articles by categories.
+- In page Home a search bar allows the user to search articles containing specfics words
+- The page "Article" displays the article selected by the user with more details.
 
-**Running the project**
+## Running the project
 
-Clone this repository :
+**Clone this repository**
 
 ```
 git clone https://github.com/LilaGuill/news.git
 cd news
 ```
 
-Install packages :
+**Install packages**
 
 ```
 npm install
 ```
 
-When installation is complete :
+**API key**
 
-Get your Api key https://newsapi.org/docs/get-started from NewsAPI
+- Get your Api key https://newsapi.org/docs/get-started from NewsAPI.
+- Create .env file at the root of the project.
+- Paste your API key in the .env file
+- Don't forget to add .env in your .gitignore file.
 
 ```
-//create .env file at the root of the project.
-//add your api key
-
 API_KEY="123454...."
 
-//Don't forget to add .env in your .gitignore file
-
 ```
 
-Then run the project with:
+**Run the project**
 
 ```
 npm start
@@ -56,9 +54,10 @@ from a server.
 Netlify provide a easy way to execute server-side code without having to run a dedicated server thanks to the lambda functions.
 These functions are stored in the functions file in the project.
 
-For more informations about the lamba function : https://docs.netlify.com/functions/overview/
+For more informations about the lamba functions : https://docs.netlify.com/functions/overview/
+
+In your front you just have to call your function :
 
 ```
-// then in your front you just have to call your function :
 const res = await axios.get("/.netlify/functions/getNews")
 ```
