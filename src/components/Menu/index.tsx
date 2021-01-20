@@ -1,4 +1,3 @@
-import { useState } from "react"
 import axios from "axios"
 import { StyledMenu, StyledCategory } from "./StyledMenu"
 import { categories } from "../../data/categories"
