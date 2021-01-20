@@ -8,7 +8,7 @@ export const StyledLayout = styled.div`
 
   main {
     width: 80%;
-    min-height: 86vh;
+    min-height: 83vh;
     margin: auto;
     display: grid;
     place-items: center;
@@ -19,8 +19,9 @@ export const StyledLayout = styled.div`
   }
 `
 export const StyledHeader = styled.header`
-  height: 7vh;
-  border-bottom: solid 1px ${({ theme }) => theme.color.grey.darken};
+  height: 10vh;
+  border-bottom: solid 1px ${({ theme }) => theme.color.grey.medium};
+  background: white;
 
   .wrapper {
     width: 80%;

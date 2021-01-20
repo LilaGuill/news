@@ -1,6 +1,7 @@
 export const theme = {
   color: {
     black: "#1E1E1E",
+    blue: "#3F3CC0",
     grey: {
       light: "#f6f9fb",
       medium: "#e4edf3",
@@ -18,7 +19,7 @@ export const theme = {
   border: {
     radius: {
       large: "20px",
-      small: "5px",
+      small: "2px",
     },
   },
 }

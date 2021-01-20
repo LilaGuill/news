@@ -20,7 +20,7 @@ const Layout = ({ children }: LayoutType) => {
       </StyledHeader>
 
       <main>{children}</main>
-      <StyledFooter>Copyright © 2021 </StyledFooter>
+      <StyledFooter>Copyright © 2021</StyledFooter>
     </StyledLayout>
   )
 }
